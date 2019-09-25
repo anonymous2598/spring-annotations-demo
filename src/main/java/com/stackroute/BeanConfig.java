@@ -23,9 +23,9 @@ public class BeanConfig {
     {
         return new Actor("Sudeep","male",21);
     }
-    @Bean
-    public Movie movie1()
-    {
-        return new Movie(actor1());
-    }
+//    @Bean
+//    public Movie movie1()
+//    {
+//        return new Movie(actor1());
+//    }
 }
