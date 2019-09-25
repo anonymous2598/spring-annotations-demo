@@ -9,17 +9,17 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeanConfig {
     @Bean
-    public Actor actor()
+    public Actor actor1()
     {
         return new Actor("Sandeep","male",21);
     }
     @Bean
     public Movie movie()
     {
-        return new Movie(actor());
+        return new Movie(actor2());
     }
     @Bean
-    public Actor actor1()
+    public Actor actor2()
     {
         return new Actor("Sudeep","male",21);
     }

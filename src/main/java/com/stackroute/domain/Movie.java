@@ -5,19 +5,21 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
 public class Movie {
 
 
     private Actor actor;
 
-
+    @Autowired
     public Movie(Actor actor) {
         this.actor = actor;
     }
-
-
-
+//
+//    @Autowired
+//    public void setActor(Actor actor)
+//    {
+//        this.actor=actor;
+//    }
 
     public void displayActorDetails()
     {
