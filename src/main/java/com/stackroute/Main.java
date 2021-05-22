@@ -13,7 +13,7 @@ public class Main{
     public static void main(String[] args) {
         System.out.println("Using Application Context: ");
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Movie movie= context.getBean("movie1",Movie.class);
+        Movie movie= context.getBean("movie1",Movie.class);//using movie1 instead of movie a id is movie1 in @component
         movie.displayActorDetails();
         System.out.println("Using XmlBeanFactory: ");
         BeanFactory factory = new AnnotationConfigApplicationContext(AppConfig.class);
