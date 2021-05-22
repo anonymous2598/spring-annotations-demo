@@ -17,8 +17,8 @@ public class Movie implements BeanNameAware, BeanFactoryAware, ApplicationContex
     private Actor actor;
 
     @Autowired
-    public Movie(Actor actor) {
-        this.actor = actor;
+    public Movie(Actor actor2) {
+        this.actor = actor2;
     }
 //
 //    @Autowired

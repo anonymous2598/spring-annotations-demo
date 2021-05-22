@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.configuration;
 
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
@@ -13,11 +13,11 @@ public class BeanConfig {
     {
         return new Actor("Sandeep","male",21);
     }
-    @Bean
-    public Movie movie()
-    {
-        return new Movie(actor2());
-    }
+//    @Bean
+//    public Movie movie()
+//    {
+//        return new Movie(actor2());
+//    }
     @Bean
     public Actor actor2()
     {
