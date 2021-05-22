@@ -1,8 +1,6 @@
 package com.stackroute.domain;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Actor {
     private String name;
     private String gender;

@@ -7,27 +7,13 @@ import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.stereotype.Component;
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 
 
-@Component
 public class Movie implements BeanNameAware, BeanFactoryAware, ApplicationContextAware {
 
 
     private Actor actor;
-    @PostConstruct
-    public void customInit()
-    {
-        System.out.println("Method customInit() invoked...");
-    }
 
-    @PreDestroy
-    public void customDestroy()
-    {
-        System.out.println("Method customDestroy() invoked...");
-    }
     @Autowired
     public Movie(Actor actor) {
         this.actor = actor;
