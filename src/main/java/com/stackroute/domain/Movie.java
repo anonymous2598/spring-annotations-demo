@@ -1,13 +1,7 @@
 package com.stackroute.domain;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
-@Component
-@Scope("prototype")
 public class Movie {
-
 
     private Actor actor;
 
@@ -15,9 +9,6 @@ public class Movie {
     public Movie(Actor actor) {
         this.actor = actor;
     }
-
-
-
 
     public void displayActorDetails()
     {
